@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration  monitorInterval="1">
+
+	<Appenders>
+		<Console name="CONSOLE" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%threadId] %-5level %logger - %m%n" />
+		</Console>
+     <File name="LoggFile" fileName="logs/app.log">
+      <PatternLayout>
+        <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+      </PatternLayout>
+    </File>
+		<File name="testLoggFile" fileName="logs/test.log">
+			<PatternLayout>
+				<Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+			</PatternLayout>
+		</File>
+	</Appenders>
+	
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="CONSOLE" />
+			<AppenderRef ref="testLoggFile" />
+		</Root>
+	</Loggers>
+	
+</Configuration>

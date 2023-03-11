@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Log4j2Lib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Log4j2Lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/Log4j2Lib" recursive="false" />
+  </library>
+</component>
